@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Flight Registration Form</title>
+<link rel="stylesheet" href="/static/add_passenger.css">
+<body background="/static/add_passenger.jpg" style="top: 425px;">
+<div class="loginbox" style="top: 429px;
+                             height: 633px;">
+    <img src="/static/avatar.png" class="avatar" style="    top: -101px;">
+    <h1>Passenger Registration Form</h1>
+    <form method="post" action="passenger_register" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p>Flight ID</p>
+        <input type="text" name="flight_id" required>
+        <p>Passenger ID</p>
+        <input type="text" name="p_id" required>
+        <p>Passenger Status</p>
+        <input type="text" name="p_status" required>
+        <p>Passenger Age</p>
+        <input type="text" name="p_age" required>
+        <p>Passenger Name</p>
+        <input type="text" name="p_name" required>
+        <p>Passenger Gender</p>
+        <input type="text" name="p_gender" required>
+        <input type="submit" name="button" value="Register">
+    </form>
+</div>
+      {% for mes in messages %}
+      <h2>{{mes}}</h2>
+       {%endfor%}
+</body>
+</html>

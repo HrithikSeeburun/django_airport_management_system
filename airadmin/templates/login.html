@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Login Form </title>
+<link rel="stylesheet" href="/static/login.css">
+<body background="/static/login.jpg">
+<div class="loginbox">
+    <img src="/static/avatar.png" class="avatar">
+    <h1>Login Here</h1>
+    <form method="post" action="loadin">
+        {% csrf_token %}
+        <p>Username</p>
+        <input type="text" name="username" placeholder="Enter Username">
+        <p>Password</p>
+        <input type="password" name="password" placeholder="Enter Password">
+        <input type="submit" name="submit" value="login">
+        <a href="manager_register">Register Here</a>
+    </form>
+</div>
+      {% for mes in messages %}
+      <h2>{{mes}}</h2>
+       {%endfor%}
+</body>
+</html>

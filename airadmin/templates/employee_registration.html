@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/employee_registration.css">
+<title></title>
+
+</head>
+<body style="background-size: 2500px; background-position: 0">
+<div class="regform"><h1>Registration Form</h1></div>
+<div class="main">
+    <form method="post" action="employee_register">
+         {% csrf_token %}
+        <div id="name">
+            <h2 class="name">Name</h2>
+            <input class="firstname" type="text" name="fname" required><br>
+            <label class="firstlabel">first name</label>
+            <input class="lastname" type="text" name="lname" required>
+            <label class="lastlabel">last name</label>
+        </div>
+        <h2 class="name">Employee ID</h2>
+        <input class="employee_id" type="text" name="e_id" required>
+        <h2 class="name">Username</h2>
+        <input class="username" type="text" name="username" required>
+        <h2 class="name">Password</h2>
+        <input class="password" type="password" name="password" required>
+        <h2 class="name">Confirm Password</h2>
+        <input class="confirm_password" type="password" name="cpassword" required>
+        <h2 class="name">Phone Number</h2>
+        <input class="phone_number" type="text" name="pno" required>
+        <h2 class="name">Address</h2>
+        <input class="address" type="text" name="address" required>
+        <h2 class="name">Salary</h2>
+        <input class="salary" type="text" name="salary" required>
+        <h2 class="name">Designation</h2>
+        <input class="designation" type="text" name="designation" required>
+        <h2 class="name">Department</h2>
+        <input class="department" type="text" name="department" required>
+        <h2 class="name">Age</h2>
+        <input class="age" type="text" name="age" required>
+        <h2 class="name">Gender</h2>
+        <input class="gender" type="text" name="gender" required>
+        <h2 class="name">Email</h2>
+        <input class="email" type="text" name="email" required>
+        <button class="btn_register"><input type="submit" value="Submit" required></button><br>
+    </form>
+</div>
+ {% for mes in messages %}
+        <h4>{{mes}}</h4>
+        {%endfor%}
+
+</body>
+</html>

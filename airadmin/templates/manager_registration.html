@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/manager_registration.css">
+<title></title>
+
+</head>
+<body>
+<div class="regform"><h1>Registration Form</h1></div>
+<div class="main">
+<form method="post" action="manager_register">
+     {% csrf_token %}
+        <div id="name">
+            <h2 class="name">Name</h2>
+            <input class="firstname" type="text" name="fname" required><br>
+            <label class="firstlabel">first name</label>
+            <input class="lastname" type="text" name="lname" required>
+            <label class="lastlabel">last name</label>
+        </div>
+        <h2 class="name">Username</h2>
+        <input class="username" type="text" name="username" required>
+        <h2 class="name">Password</h2>
+        <input class="password" type="password" name="password" required>
+        <h2 class="name">Confirm Password</h2>
+        <input class="confirm_password" type="text" name="cpassword" required>
+        <h2 class="name">Email</h2>
+        <input class="email" type="text" name="email" required>
+        <h2 class="name">Airport ID</h2>
+        <input class="airport_id" type="text" name="a_id">
+        <h2 class="name">Airport Name</h2>
+        <input class="airport_name" type="text" name="a_name">
+        <h2 class="name">Airport's Country</h2>
+        <input class="airport_country" type="text" name="a_country">
+        <input style="    width: 150px;
+    background-color: #ff7200;
+    font-size: 19px;
+    border-radius: 10px;" type="submit" value="Submit" required>
+    </form>
+</div>
+        {% for mes in messages %}
+        <h4>{{mes}}</h4>
+        {%endfor%}
+
+</body>
+</html>

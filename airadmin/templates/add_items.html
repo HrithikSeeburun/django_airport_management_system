@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Item Registration Form</title>
+<link rel="stylesheet" href="/static/add_items.css">
+<body background="/static/add_items.jpg">
+<div class="loginbox" style="top: 429px;
+                             height: 592px;">
+    <img src="/static/avatar.png" class="avatar" style="    top: -101px;">
+    <h1>Item Registration Form</h1>
+    <form method="post" action="add_item" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p>Item ID</p>
+        <input type="number" name="s_id" required>
+        <p>Description</p>
+        <input type="text" name="s_equipment" required>
+        <p>Price</p>
+        <input type="number" name="s_price" required>
+        <p>Quantity</p>
+        <input type="number" name="s_quantity" required>
+        <p>Image</p>
+        <input type="file" name="image" required>
+        <input type="submit" name="button" value="Register">
+    </form>
+</div>
+      {% for mes in messages %}
+      <h2>{{mes}}</h2>
+       {%endfor%}
+</body>
+</html>

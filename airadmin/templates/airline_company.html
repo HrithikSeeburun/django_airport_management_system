@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/static/airline_company.css">
+<head><h1>AIRLINE COMPANY</h1></head>
+<body background="/static/airline_company.jpg">
+<div class="employee">
+<table cellspacing="0px" border=3px solid #C0C0C0;
+	 border-radius=10px;
+	 height=550;
+	 width=1500;
+     style="background-color: rgba(0,0,0,0.4);">
+  <tr>
+      <th>FLIGHT ID</th>
+	  <th>AIRLINE NAME</th>
+  </tr>
+	{% for i in ac %}
+  <tr>
+	  <td>{{i.flight_id}}</td>
+	  <td>{{i.airline_name}}</td>
+  </tr>
+	{% endfor %}
+</table>
+</div>
+ <br><a href="return" style="
+    width: 150px;
+    height: 22px;
+    font-size: 20px;
+    color: black;
+    background-color: #ff7200;
+    border-radius: 5px;
+    font-weight: Bold;
+    text-decoration: none;
+    position:absolute;
+    text-align:center
+    ">HOME PAGE</a>
+<a href="add_airline_company" style="
+    width: 150px;
+    height: 22px;
+    font-size: 20px;
+    color: black;
+    background-color: #ff7200;
+    border-radius: 5px;
+    font-weight: Bold;
+    text-decoration: none;
+    position:absolute;
+    right:50px;
+    text-align:center;
+    ">ADD AIRLINE COMPANY</a><br>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Airline Registration Form </title>
+<link rel="stylesheet" href="/static/add_airline.css">
+<body background="/static/login.jpg">
+<div class="loginbox" style="height: 294px;">
+    <img src="/static/avatar.png" class="avatar" style="top: -35%">
+    <h1>Airline Registration Form</h1>
+    <form method="post" action="airline_register" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p>Flight ID</p>
+        <input type="text" name="flight_id" required>
+        <p>Airline Name</p>
+        <input type="text" name="a_name" required>
+        <input type="submit" name="button" value="Register">
+    </form>
+</div>
+      {% for mes in messages %}
+      <h2>{{mes}}</h2>
+       {%endfor%}
+</body>
+</html>

@@ -1,0 +1,47 @@
+ body{
+	 background-position:center;
+	 background-size:cover;
+ }
+ h1{
+	 color:#ff7200;
+	 font-family:Aerial;
+	 font-size:40px;
+	 font-weight:Bold;
+	 text-align:center;
+	 text-decoration: 2px underline #fff;
+
+ }
+ .employee table{
+	 border:3px solid #C0C0C0;
+	 border-radius:10px;
+	 height:550;
+	 width:1500;
+ }
+ .employee table th{
+	 font-family:Aerial;
+	 font-size:25px;
+	 font-weight:Bold;
+	 color:#00FFEF;
+	 border:1px solid #C0C0C0;
+ }
+ .employee table td{
+	 font-family:Times New Roman;
+	 font-size: 20px;
+	 color:#fff;
+     text-align:center;
+	 border:1px solid #C0C0C0;
+ }
+ a{
+	 width:150px;
+	 height:50px;
+	 font-size:15px;
+	 color:black;
+	 background-color:#ff7200;
+	 border-radius:10px;
+	 font-weight:Bold;
+
+ }
+a:hover{
+	background-color: #fff;
+	text-decoration:none;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Immigration Registration Form</title>
+<link rel="stylesheet" href="/static/add_immigration.css">
+<body background="/static/add_immigration.jpg">
+<div class="loginbox">
+    <img src="/static/avatar.png" class="avatar">
+    <h1>Immigration Registration Form</h1>
+    <form method="post" action="immigration_register" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p>Employee ID</p>
+        <input type="text" name="E_id" required>
+        <p>Passenger Name</p>
+        <input type="text" name="p_name" required>
+        <p>Employee Name</p>
+        <input type="text" name="E_name" required>
+        <input type="submit" name="button" value="Register">
+    </form>
+</div>
+      {% for mes in messages %}
+      <h2>{{mes}}</h2>
+       {%endfor%}
+</body>
+</html>

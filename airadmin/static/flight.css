@@ -1,0 +1,90 @@
+body{
+	background-position:center;
+	background-size:cover;
+}
+h1{
+	color:#ff7200;
+	text-align:center;
+	font-size:35px;
+	font-family:Aerial;
+	font-weight:Bold;
+	text-decoration:2px underline #fff;
+}
+.departure h2{
+	color:black;
+	border: 3px solid #ff7200;
+	width: 190px;
+	background-color:#fff;
+	font-Weight:Bold;
+    font-size:30px;
+	font-family:Aerial;
+	border-radius:10px;
+}
+
+.departure table{
+	border: 3px solid #ff7200;
+	width:1500px;
+	height:550px;
+	background:rgba(0,0,0,0.7)50%;
+	border-radius:10px;
+}
+.departure table td{
+	color:#fff;
+	text-align:center;
+	font-size:18px;
+	font-family:Times New Roman;
+}
+.departure table th{
+	color:yellow;
+	text-align:center;
+	font-size:20px;
+	font-family:Aerial;
+	font-Weight:Bold;
+
+}
+.arrival h3{
+	color:black;
+	border: 3px solid #ff7200;
+	width: 160px;
+	background-color:#fff;
+	font-Weight:Bold;
+    font-size:30px;
+	font-family:Aerial;
+	border-radius:10px;
+}
+.arrival table{
+	border: 3px solid #ff7200;
+	width:1500px;
+	height:550px;
+	background:rgba(0,0,0,0.7)50%;
+	border-radius:10px;
+}
+
+.arrival table td{
+	color:#fff;
+	text-align:center;
+	font-size:18px;
+	font-family:Times New Roman;
+}
+.arrival table th{
+	color:yellow;
+	text-align:center;
+	font-size:20px;
+	font-family:Aerial;
+	font-Weight:Bold;
+
+}
+ input{
+	 width:150px;
+	 height:50px;
+	 font-size:15px;
+	 color:black;
+	 background-color:#ff7200;
+	 border-radius:10px;
+	 font-weight:Bold;
+
+ }
+input:hover{
+	background-color: #fff;
+	text-decoration:none;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Runway Registration Form</title>
+<link rel="stylesheet" href="/static/add_runway.css">
+<body background="/static/add_runway.jpg">
+<div class="loginbox" style="height: 539px">
+    <img src="/static/avatar.png" class="avatar" style="top: -20%">
+    <h1>Runway Registration Form</h1>
+    <form method="post" action="runway_register" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p>Flight ID</p>
+        <input type="text" name="f_id" required>
+        <p>Runway ID</p>
+        <input type="text" name="r_id" required>
+        <p>Status of Terminal</p>
+        <input type="text" name="status_of_terminal" required>
+        <p>Date</p>
+        <input type="date" name="date" required>
+        <p>Lock Time</p>
+        <input type="time" name="lock_time" required>
+        <p>Release Time</p>
+        <input type="time" name="release_time" required>
+        <input type="submit" name="button" value="Register">
+    </form>
+</div>
+      {% for mes in messages %}
+      <h2>{{mes}}</h2>
+       {%endfor%}
+</body>
+</html>

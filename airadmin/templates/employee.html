@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/static/employee.css">
+<head><h1>EMPLOYEE DETAILS</h1></head>
+<body background="/static/employee.jpg">
+<div class="employee">
+<table cellspacing="0px" border=3px solid #C0C0C0;
+	 border-radius=10px;
+	 height=550;
+	 width=1500; >
+  <tr>
+      <th>EMPLOYEE ID</th>
+	  <th>NAME</th>
+	  <th>PHONE NUMBER</th>
+	  <th>ADDRESS</th>
+	  <th>SALARY</th>
+	  <th>DESIGNATION</th>
+	  <th>DEPARTMENT</th>
+	  <th>AGE</th>
+	  <th>GENDER</th>
+	  <th>EMAIL</th>
+  </tr>
+	{% for i in em %}
+  <tr>
+	  <td>{{i.E_id}}</td>
+	  <td>{{i.E_name}}</td>
+	  <td>{{i.E_pno}}</td>
+	  <td>{{i.E_address}}</td>
+	  <td>{{i.E_salary}}</td>
+	  <td>{{i.E_designation}}</td>
+	  <td>{{i.E_department}}</td>
+	  <td>{{i.E_age}}</td>
+	  <td>{{i.E_gender}}</td>
+	  <td>{{i.E_email}}</td>
+  </tr>
+	{% endfor %}
+</table>
+</div>
+ <br><a href="return" style="
+    width: 150px;
+    height: 22px;
+    font-size: 20px;
+    color: black;
+    background-color: #ff7200;
+    border-radius: 5px;
+    font-weight: Bold;
+    text-decoration: none;
+    position:absolute;
+    text-align:center;
+    ">HOME PAGE</a>
+
+<a href="employee_register" style="
+    width: 200px;
+    height: 22px;
+    font-size: 20px;
+    color: black;
+    background-color: #ff7200;
+    border-radius: 5px;
+    font-weight: Bold;
+    text-decoration: none;
+    position:absolute;
+    text-align:center;
+    right:50px;
+    ">ADD EMPLOYEE</a><br>
+</body>
+</html>
